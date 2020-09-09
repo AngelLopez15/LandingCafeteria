@@ -3,11 +3,23 @@ body{
   background-color: #eee;
 }
 
+a{
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
 p{
   font-family: 'Old Standard TT', serif;
 }
 
 .title-address{
+  font-family: 'Dancing Script', cursive;
+}
+
+.title-avatar{
   font-family: 'Dancing Script', cursive;
 }
 
@@ -52,13 +64,13 @@ entonces debemos ocupar la propiedad min-height en el titulo */
   text-decoration: none;
 }
 
-.product-stripe{
+.product-stripe, .slider{
   overflow-x: scroll;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.stripe-container{
+.stripe-container, .slider-container{
   display: flex;
 }
 
@@ -82,6 +94,7 @@ entonces debemos ocupar la propiedad min-height en el titulo */
   height: 100%;
   width: 100%;
 }
+/* termina el hack */
 
 .footer{
   color: white;
@@ -90,4 +103,67 @@ entonces debemos ocupar la propiedad min-height en el titulo */
 
 .firm{
   padding: 1.2em;
+}
+
+.imagen-acerca{
+  width: 300px;
+  /* float: left; */
+}
+
+/* Para hacer el slider sin programacion de JS */
+.image-container{
+  width: 100%;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.slider {
+  overflow-x: hidden;
+}
+
+/* Poniendo la animacion al slider */
+.slider-container{
+  transform:translateX(0);
+  animation: slider 10s infinite;
+}
+
+@keyframes slider{
+  0%{
+    transform:translateX(0);
+  }
+  20%{
+    transform:translateX(0);
+  }
+  25%{
+    transform:translateX(-100%);
+  }
+  45%{
+    transform:translateX(-100%);
+  }
+  50%{
+    transform:translateX(-200%);
+  }
+  70%{
+    transform:translateX(-200%);
+  }
+  75%{
+    transform:translateX(-300%);
+  }
+  95%{
+    transform:translateX(-300%);
+  }
+  100%{
+    transform:translateX(0);
+  }
+}
+/* fin del slider */
+
+.avatar{
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
 }
