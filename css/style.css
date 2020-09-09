@@ -1,0 +1,35 @@
+body{
+  font-family: 'Dancing Script', cursive;
+}
+
+p{
+  font-family: 'Old Standard TT', serif;
+}
+
+.cover{
+  background-image: url(../img/cafe.jpg);
+  background-size: cover;
+  background-position: center;
+  /* poniendo opacidad para que contrasten las letras */
+  background-color: rgba(0, 0, 0, .4);
+  background-blend-mode: darken;
+  height: 550px;
+  color: white;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
+
+/* el diseño web moderno dicta que en lugar de bordes debemos tener sombras */
+.card{
+  border: none;
+  box-shadow: 0 4px 6px -1px;
+}
+
+.card-img-top{
+  height:250px;
+}
+
+/* Tip: si cuando estamos usando tarjetas los titulos hacen que se descuadren
+entonces debemos ocupar la propiedad min-height en el titulo */
