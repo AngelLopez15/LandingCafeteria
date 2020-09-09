@@ -11,15 +11,16 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">LOGO</a>
+      <a class="navbar-brand" href="./index.html">LOGO</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="#">Inicio<span class="sr-only">(current)</span></a>
-          <a class="nav-link" href="#">Ubicación</a>
-          <a class="nav-link" href="#">Acerca de</a>
+          <a class="nav-link active" href="/">Inicio</a>
+          <a class="nav-link" href="#stripe">Menú</a>
+          <a class="nav-link" href="./acercaDe.html">Acerca de</a>
+          <a class="nav-link" href="#map">Ubicación</a>
         </div>
       </div>
     </nav>
@@ -33,42 +34,152 @@
 
   </header>
 
-  <section>
-    <div class="container mt-5 mb-5">
-      <div class="row">
-        
-        <div class="col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="./img/rsz_1gabriel-jimenez-jin4w1hqgl4-unsplash.jpg" class="card-img-top" alt="manos agarrando tierra de cultivo">
-            <div class="card-body">
-              <h5 class="card-title">Cultivo sustentable</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <main>
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          
+          <div class="col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <img src="./img/rsz_1gabriel-jimenez-jin4w1hqgl4-unsplash.jpg" class="card-img-top" alt="manos agarrando tierra de cultivo">
+              <div class="card-body">
+                <h5 class="card-title">Cultivo sustentable</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
             </div>
           </div>
-        </div>
+          
+          <div class="col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/rsz_1gabriel-jimenez-jin4w1hqgl4-unsplash.jpg" class="card-img-top" alt="manos agarrando tierra de cultivo">
+                <div class="card-body">
+                  <h5 class="card-title">Cultivo sustentable</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+          </div>
         
-        <div class="col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
-              <img src="./img/rsz_1gabriel-jimenez-jin4w1hqgl4-unsplash.jpg" class="card-img-top" alt="manos agarrando tierra de cultivo">
-              <div class="card-body">
-                <h5 class="card-title">Cultivo sustentable</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/rsz_1gabriel-jimenez-jin4w1hqgl4-unsplash.jpg" class="card-img-top" alt="manos agarrando tierra de cultivo">
+                <div class="card-body">
+                  <h5 class="card-title">Cultivo sustentable</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
               </div>
-            </div>
+          </div>
+  
         </div>
-      
-        <div class="col-12 col-sm-6 col-md-4 mb-5 d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
-              <img src="./img/rsz_1gabriel-jimenez-jin4w1hqgl4-unsplash.jpg" class="card-img-top" alt="manos agarrando tierra de cultivo">
-              <div class="card-body">
-                <h5 class="card-title">Cultivo sustentable</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-        </div>
-
       </div>
+    </section>
+  
+    <section>
+      <div class="container mt-5 mb-5">
+        <div class="row mb-5s">
+          
+          <div class="col-12 col-sm-6">
+            <img src="./img/CoffeeDoddle.svg" alt="caricatura de hombre agarrando taza gigante de cafe">
+          </div>
+  
+          <div class="col-12 col-sm-6 contenedor">
+            <p class="h1 mb-5">Empieza tu día siempre con una taza de café</p>
+            <p class="h4">Ordena tu bolsa de café o busca tu sucursal Cafémon más cercana</p>
+            <a href="#map" class="link-mapa">Ir al mapa</a>
+          </div>
+          
+        </div>
+        <!-- En action es donde decimos a donde se deben de enviar las cosas -->
+        <form action="">
+          <label for="email">Correo eléctronico</label>
+          <div class="d-flex">
+            <div class="flex-fill mr-3">
+              <!-- Es importante que siempre asociemos un label con un input -->
+              <!-- El valor del for del label debe ser el mismo que el valor del id del input -->
+              <input type="email" name="" id="email" class="form-control" autocomplete="off">
+            </div>
+            <!-- El boton debe tener el type submit para que sepa que debe enviar los datos del formulario -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  
+    <section>
+      <div class="container mt-5 mb-5" id="stripe">
+  
+        <div class="product-stripe">
+          
+          <div class="stripe-container">
+  
+            <div class="card" style="width: 18rem;">
+              <img src="./img/chaos-creator-rOQdDwXoVps-unsplash.jpg" class="card-img-top" alt="taza de cafe">
+              <div class="card-body">
+                <h5 class="card-title">Expresso</h5>
+                <span class="badge badge-info">$50</span>
+              </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+              <img src="./img/steve-tsang-LXFwUcYD25Y-unsplash.jpg" class="card-img-top" alt="taza de cafe">
+              <div class="card-body">
+                <h5 class="card-title">Americano</h5>
+                <span class="badge badge-info">40</span>
+              </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+              <img src="./img/nathan-dumlao-nBJHO6wmRWw-unsplash.jpg" class="card-img-top" alt="taza de cafe">
+              <div class="card-body">
+                <h5 class="card-title">Capuccino</h5>
+                <span class="badge badge-info">$60</span>
+              </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+              <img src="./img/chaos-creator-rOQdDwXoVps-unsplash.jpg" class="card-img-top" alt="taza de cafe">
+              <div class="card-body">
+                <h5 class="card-title">Coffemon</h5>
+                <span class="badge badge-info">$80</span>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img src="./img/nathan-dumlao-nBJHO6wmRWw-unsplash.jpg" class="card-img-top" alt="taza de cafe">
+              <div class="card-body">
+                <h5 class="card-title">Capuccino</h5>
+                <span class="badge badge-info">$60</span>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img src="./img/steve-tsang-LXFwUcYD25Y-unsplash.jpg" class="card-img-top" alt="taza de cafe">
+              <div class="card-body">
+                <h5 class="card-title">Americano</h5>
+                <span class="badge badge-info">40</span>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+    </section>
+  
+    <section>
+      <div class="container mt-5 mb-5 text-center" id="map">
+        <p class="h3 title-address">Aqui nos vemos</p>
+        <p class="mb-5">001 Gutmann Ways Apt. 917 Missouri</p>
+        <div class="responsive-iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.495742540195!2d-99.1635152845806!3d19.347675705916743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffdcb3afc8d1%3A0x9ce8839c8bfba181!2sCentro%20De%20Coyoacan!5e0!3m2!1ses-419!2smx!4v1599631989871!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer text-center">
+      <p class="firm mt-5 mb-0">Hecho por Angel López 2020</p>
     </div>
-  </section>
+  </footer>
 </body>
 </html>
